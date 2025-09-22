@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio Final – Guía 4</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Agenda semanal</h1>
+
+    <p id="fecha"></p>
+
+    <form onsubmit="recordarActividad(); return false;">
+      <label for="dia">Día de la semana:</label>
+      <select id="dia">
+        <option value="lunes">Lunes</option>
+        <option value="martes">Martes</option>
+        <option value="miercoles">Miércoles</option>
+        <option value="jueves">Jueves</option>
+        <option value="viernes">Viernes</option>
+        <option value="sabado">Sábado</option>
+        <option value="domingo">Domingo</option>
+      </select>
+
+      <br />
+      <br />
+
+      <label for="mensaje">Mensaje personalizado:</label>
+      <input type="text" id="mensaje" placeholder="Ejemplo: No olvidar carpeta" />
+
+      <br />
+      <br />
+
+      <button type="submit">Recordarme</button>
+    </form>
+
+    <div id="resultado"></div>
+
+    <h2>Agenda completa</h2>
+    <ul>
+      <li>Lunes: Atender a un cliente específico</li>
+      <li>Martes: Visitar una agencia fuera de la ciudad</li>
+      <li>Miercoles: Llevar a mi hija al ballet</li>
+      <li>Jueves: Priorizar entregas de desarrollo</li>
+      <li>Viernes: Atender problemas de manera remota</li>
+      <li>Sabado: Hacer lo que mi esposa quiera</li>
+      <li>Domingo: Sin actividad programada</li>
+    </ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
